@@ -18,7 +18,7 @@ Create a WooCommerce product (simple product will do) and set it to "Virtual". A
 
 Next, paste the URL of the post with the content you want to sell and protect into the link field highlighted below.
 
-At the top you find a password generator (Random Password). You can copy that and insert into the password field (Field Name: "Insert Password for the protected page")
+At the top you find a password generator (Random Password). You can copy that password and insert into the password field (Field Name: "Insert Password for the protected page")
 
 When you're done, hit publish.
 
@@ -28,7 +28,7 @@ If you return to the lists of posts, you will see that the post is protected.
 
 ![woocommerce-buy-protected-page-four](woocommerce-buy-protected-page-four.jpg)
 
-If you check, you can see it's the password that you've inserted into your WooCommerce product.
+If you check, you can see it's the password that you've inserted into your WooCommerce product. As an admin or editor you can now edit the post and add your unique content that only a buyer with the password can access.
 
 ![woocommerce-buy-protected-page-five](woocommerce-buy-protected-page-five.jpg)
 
