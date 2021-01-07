@@ -2,7 +2,9 @@
 
 ## Description ##
 
-### Easy way to create a post/page and link it to a WooCommerce product. Includes automatic password protection, link on thank you page and order confirmation mail (order completed) and customer account ###
+### Sell protected content (post/page) with a WooCommerce product. Includes automatic content password protection, after purchase link and password in order confirmation email (if order completed) and customer account. ###
+
+## How to use this plugin ##
 
 Anschliessend den Bestellstatus auf "Fertiggestellt" setzen und rechts bei "Bestell Aktionen" "Aktualisieren" klicken. So wird die E-Mail ausgelöst, dass die Bestellung fertig gestellt sei.
 
