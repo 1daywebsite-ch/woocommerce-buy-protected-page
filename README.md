@@ -2,7 +2,7 @@
 
 ## Description ##
 
-### Sell protected content (post/page) with a WooCommerce product. Includes automatic content password protection, after purchase link and password in order confirmation email (if order completed) and customer account. ###
+### Sell protected content (post/page) with a WooCommerce product. Includes automatic content password protection. After a purchase link and password will be sent to the buyer in the order confirmation email (only if order completed) and will be listed in the customer account (if created). ###
 
 ## How to use this plugin ##
 
