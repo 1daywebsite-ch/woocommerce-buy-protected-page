@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: AFB Woocommerce Buy Protected Page
+ * Plugin Name: Woocommerce Buy Protected Page
  * Plugin URI: https://1daywebsite.ch
  * Description: Create a product and add link to protected content (page) that shows up after purchase in the thankyou page and email confirmation
  * Version: 1.0.0
