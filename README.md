@@ -24,11 +24,11 @@ When you're done, hit publish.
 
 ![woocommerce-buy-protected-page-three](woocommerce-buy-protected-page-three.jpg)
 
-If you return to the lists of posts, you will see that the post is protected.
+If you return to the list of posts, you will see that the post is now protected.
 
 ![woocommerce-buy-protected-page-four](woocommerce-buy-protected-page-four.jpg)
 
-If you check, you can see it's the password that you've inserted into your WooCommerce product. As an admin or editor you can now edit the post and add your unique content that only a buyer with the password can access.
+If you check, you can see it's the password that you've inserted into your WooCommerce product. As an admin or editor you can now edit the post and add your unique content that later a buyer with the password can access.
 
 ![woocommerce-buy-protected-page-five](woocommerce-buy-protected-page-five.jpg)
 
