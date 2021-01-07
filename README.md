@@ -2,10 +2,7 @@
 
 ## Description ##
 
-### dddd ###
-
-
-![post-tracking-eins](post-tracking-eins.jpg)
+### Easy way to create a post/page and link it to a WooCommerce product. Includes automatic password protection, link on thank you page and order confirmation mail (order completed) and customer account ###
 
 Anschliessend den Bestellstatus auf "Fertiggestellt" setzen und rechts bei "Bestell Aktionen" "Aktualisieren" klicken. So wird die E-Mail ausgelöst, dass die Bestellung fertig gestellt sei.
 
