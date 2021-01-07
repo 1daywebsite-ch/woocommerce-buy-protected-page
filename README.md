@@ -6,40 +6,45 @@
 
 ## How to use this plugin ##
 
-Anschliessend den Bestellstatus auf "Fertiggestellt" setzen und rechts bei "Bestell Aktionen" "Aktualisieren" klicken. So wird die E-Mail ausgelöst, dass die Bestellung fertig gestellt sei.
-
-Die Sendungsnummer wird daraufhin in der Kundin-E-Mail erscheinen, sowie in ihrem Kundenkonto.
+Create the post (or page) with the content you want to sell. Publish it.
 
 ![woocommerce-buy-protected-page-one](woocommerce-buy-protected-page-one.jpg)
 
-ssss
+Copy the URL of this post (into the clipboard for the moment).
 
 ![woocommerce-buy-protected-page-two](woocommerce-buy-protected-page-two.jpg)
 
-ssss
+Create a WooCommerce product (simple product will do) and set it to "Virtual". A new tab named "Protected Content Page" will open up.
+
+Next, paste the URL of the post with the content you want to sell and protect into the link field highlighted below.
+
+At the top you find a password generator (Random Password). You can copy that and insert into the password field (Field Name: "Insert Password for the protected page")
+
+When you're done, hit publish.
 
 ![woocommerce-buy-protected-page-three](woocommerce-buy-protected-page-three.jpg)
 
-ssss
+If you return to the lists of posts, you will see that the post is protected.
 
 ![woocommerce-buy-protected-page-four](woocommerce-buy-protected-page-four.jpg)
 
-ssss
+If you check, you can see it's the password that you've inserted into your WooCommerce product.
 
 ![woocommerce-buy-protected-page-five](woocommerce-buy-protected-page-five.jpg)
 
+The email with the link to the protected page and the password for access will only be sent, once the order is complete. If you use PayPal or some other payment processor this should happen automatically. If you use manual payment methods (like payment in advance, payment on pickup etc.), you have to complete the order, as shown below:
 
+![woocommerce-buy-protected-page-six](woocommerce-buy-protected-page-six.jpg)
 
 ## Installation ##
-Oben rechts das Plugin als ZIP-Datei runterladen und das Plugin-Verzeichnis auspacken.
+In the upper right corner download the plugin as a ZIP file and unpack the folder within.
 
-Es gibt folgende zwei Möglichkeiten der Installation:
+There are two ways of installation:
 
-1. Plugin-Verzeichnis in das Verzeichnis `/wp-content/plugins/` raufladen und anschliessend Plugin in WordPress aktivieren.
-2. Plugin durch "Plugins" - "Installieren" - "Plugin Hochladen" in WordPress raufladen und anschliessend Plugin aktivieren.
-
+1. If you use FTP (or some other form), upload the folder to `/wp-content/plugins/` and activate the plugin within the WordPress dashboard.
+2. Install the plugin via "Plugins - Install - Upload Plugin" in the WordPress dashboard, then activate it.
 
 ## Changelog ##
 
 ### 1.0.0 ###
-Erste Version: Getestet mit Woocommerce 4.2 und WordPress 5.4.1
+Erste Version: Tested with Woocommerce 4.8 und WordPress 5.6
