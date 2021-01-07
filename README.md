@@ -32,7 +32,11 @@ If you check, you can see it's the password that you've inserted into your WooCo
 
 ![woocommerce-buy-protected-page-five](woocommerce-buy-protected-page-five.jpg)
 
-The email with the link to the protected page and the password for access will only be sent, once the order is complete. If you use PayPal or some other payment processor this should happen automatically. If you use manual payment methods (like payment in advance, payment on pickup etc.), you have to complete the order, as shown below:
+### Note ###
+
+The email with the link to the protected page and the password for access will only be sent once the order is complete. If you use PayPal or some other payment processor this should happen instantly and automatically.
+
+If you offer manual or rather offline payment methods (like payment in advance, payment on pickup etc.), you have to complete the order as shown below:
 
 ![woocommerce-buy-protected-page-six](woocommerce-buy-protected-page-six.jpg)
 
