@@ -1,0 +1,80 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: AFB Woocommerce Buy Protected Page\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-07 16:33+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.6\n"
+"X-Domain: wc-buy-protected-page"
+
+#: woocommerce-buy-protected-page.php:138
+#: woocommerce-buy-protected-page.php:150
+msgid "Access Content"
+msgstr ""
+
+#. Author of the plugin
+msgid "AFB"
+msgstr ""
+
+#. Name of the plugin
+msgid "AFB Woocommerce Buy Protected Page"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Create a product and add link to protected content (page) that shows up "
+"after purchase in the thankyou page and email confirmation"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "https://1daywebsite.ch"
+msgstr ""
+
+#: woocommerce-buy-protected-page.php:75
+msgid "Insert Password for the protected page"
+msgstr ""
+
+#: woocommerce-buy-protected-page.php:82
+msgid "Insert the <b>link</b> to the page or post with the protected content."
+msgstr ""
+
+#: woocommerce-buy-protected-page.php:77
+msgid ""
+"Insert the password for the protected page that only the buyer of this "
+"product should have."
+msgstr ""
+
+#: woocommerce-buy-protected-page.php:69
+msgid "Random Password"
+msgstr ""
+
+#: woocommerce-buy-protected-page.php:138
+#: woocommerce-buy-protected-page.php:150
+msgid "To access your content, please use the following password"
+msgstr ""
+
+#: woocommerce-buy-protected-page.php:70
+msgid "You can use this password for the password field below"
+msgstr ""
+
+#: woocommerce-buy-protected-page.php:126
+msgid ""
+"You may access the content that you just purchased as soon as your order is "
+"completed. You will receive an email confirmation. Thank you!"
+msgstr ""
+
+#: woocommerce-buy-protected-page.php:138
+#: woocommerce-buy-protected-page.php:150
+msgid ""
+"You may access the content that you just purchased at the following link"
+msgstr ""
