@@ -11,7 +11,25 @@ Anschliessend den Bestellstatus auf "Fertiggestellt" setzen und rechts bei "Best
 
 Die Sendungsnummer wird daraufhin in der Kundin-E-Mail erscheinen, sowie in ihrem Kundenkonto.
 
-![post-tracking-zwei](post-tracking-zwei.jpg)
+![woocommerce-buy-protected-page-one](woocommerce-buy-protected-page-one.jpg)
+
+ssss
+
+![woocommerce-buy-protected-page-two](woocommerce-buy-protected-page-two.jpg)
+
+ssss
+
+![woocommerce-buy-protected-page-three](woocommerce-buy-protected-page-three.jpg)
+
+ssss
+
+![woocommerce-buy-protected-page-four](woocommerce-buy-protected-page-four.jpg)
+
+ssss
+
+![woocommerce-buy-protected-page-five](woocommerce-buy-protected-page-five.jpg)
+
+
 
 ## Installation ##
 Oben rechts das Plugin als ZIP-Datei runterladen und das Plugin-Verzeichnis auspacken.
