@@ -30,8 +30,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			//add_action( 'woocommerce_view_order', array ($this, 'afbbuyprotect_action_woocommerce_view_order'), 20 ); 
 			add_action( 'woocommerce_thankyou', array ($this, 'afbbuyprotect_action_woocommerce_thankyou'), 20 ); 
 			//add_action( 'woocommerce_email_order_meta', array ($this, 'afbbuyprotect_action_woocommerce_email_order_meta'), 10, 4 ); 
-
-			
 	    }
 		/**
 		 * Load plugin textdomain.
@@ -39,9 +37,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		function afbbuyprotect_load_textdomain() {
 			load_plugin_textdomain( 'wc-buy-protected-page', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
 		}
-
 		/*
-		 * Tab
+		 * New Tab "Protected Content Page"
 		 */
 
 		function afbbuyprotect_product_settings_tabs( $tabs ){
@@ -53,7 +50,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			);
 			return $tabs;
 		}
- 
 		/*
 		 * Tab content
 		 */
@@ -81,8 +77,10 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				'description'       => __('The post/page at this link will be protected with the password set above.','wc-buy-protected-page')
 			) );
 			echo '</div>';
-		 
 		}
+		/*
+		 * Save Fields & Password Protect Linked Post/Page
+		 */
 		function afbbuyprotect_save_fields( $product ){
 			if( isset($_POST['_afbbuyprotect_password']) ) {
 				$product->update_meta_data( '_afbbuyprotect_password', sanitize_text_field($_POST['_afbbuyprotect_password']) );
@@ -97,6 +95,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				);
 			}		
 		}
+		/*
+		 * Add Icon to Tab
+		 */
 		function afbbuyprotect_css_icon(){
 			echo '<style>
 			#woocommerce-product-data ul.wc-tabs li.afbbuyprotect_options.afbbuyprotect_tab a:before {
@@ -104,6 +105,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			}
 			</style>';
 		}
+		/*
+		 * Simple Password Generator, set at 8 characters
+		 */
 		function createRandomPassword($length=8,$chars="") { 
 			if ( $chars=="" ) {
 				$chars = "abcdefghijkmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ0123456789"; 
@@ -119,7 +123,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			} 
 			return $pass; 
 		}
-		// Add extra order info to thank you page
+		/*
+		 * Simple Password Generator, set at 8 characters
+		 */
 	    function afbbuyprotect_action_woocommerce_thankyou( $order_id ) { 
 			$order = wc_get_order( $order_id );
 			foreach ($order->get_items() as $item_id => $item ) {   
