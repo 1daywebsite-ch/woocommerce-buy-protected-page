@@ -30,6 +30,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			//add_action( 'woocommerce_view_order', array ($this, 'afbbuyprotect_action_woocommerce_view_order'), 20 ); 
 			add_action( 'woocommerce_thankyou', array ($this, 'afbbuyprotect_action_woocommerce_thankyou'), 20 ); 
 			//add_action( 'woocommerce_email_order_meta', array ($this, 'afbbuyprotect_action_woocommerce_email_order_meta'), 10, 4 ); 
+
+			
 	    }
 		/**
 		 * Load plugin textdomain.
@@ -37,10 +39,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 		function afbbuyprotect_load_textdomain() {
 			load_plugin_textdomain( 'wc-buy-protected-page', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
 		}
-		/*
+		/**
 		 * New Tab "Protected Content Page"
 		 */
-
 		function afbbuyprotect_product_settings_tabs( $tabs ){
 			$tabs['afbbuyprotect'] = array(
 				'label'    => 'Protected Content Page',
@@ -50,7 +51,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			);
 			return $tabs;
 		}
-		/*
+		/**
 		 * Tab content
 		 */
 		function afbbuyprotect_product_panels(){
@@ -78,9 +79,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			) );
 			echo '</div>';
 		}
-		/*
+		/**
 		 * Save Fields & Password Protect Linked Post/Page
-		 */
+		 */		
 		function afbbuyprotect_save_fields( $product ){
 			if( isset($_POST['_afbbuyprotect_password']) ) {
 				$product->update_meta_data( '_afbbuyprotect_password', sanitize_text_field($_POST['_afbbuyprotect_password']) );
@@ -95,9 +96,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				);
 			}		
 		}
-		/*
+		/**
 		 * Add Icon to Tab
-		 */
+		 */		
 		function afbbuyprotect_css_icon(){
 			echo '<style>
 			#woocommerce-product-data ul.wc-tabs li.afbbuyprotect_options.afbbuyprotect_tab a:before {
@@ -105,9 +106,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			}
 			</style>';
 		}
-		/*
+		/**
 		 * Simple Password Generator, set at 8 characters
-		 */
+		 */		
 		function createRandomPassword($length=8,$chars="") { 
 			if ( $chars=="" ) {
 				$chars = "abcdefghijkmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ0123456789"; 
@@ -123,8 +124,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			} 
 			return $pass; 
 		}
-		/*
-		 * Simple Password Generator, set at 8 characters
+		/**
+		 * Text for Thankyou Page that access to protected content will be granted as soon as order is completed. Only appears for
+		 * orders that contain a page link and password 
 		 */
 	    function afbbuyprotect_action_woocommerce_thankyou( $order_id ) { 
 			$order = wc_get_order( $order_id );
@@ -136,7 +138,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				}
 			}
 		}		
-		// Add tracking info to myaccount order page
+		/*
+		 * Customer account - link & password. Appear only in account once order is complete
+		 */
 	    function afbbuyprotect_action_woocommerce_view_order( $order_id ) { 
 			$order = wc_get_order( $order_id );
 			if($order->get_status()=="completed") {
@@ -149,7 +153,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				}
 			}
 		}	
-	    // Add tracking info to order complete email
+		/*
+		 * Email Order Completed - contains link & password to protected page
+		 */
 	    function afbbuyprotect_action_woocommerce_email_order_meta( $order, $sent_to_admin, $plain_text, $email ) { 
 			if($order->get_status()=="completed") {
 				foreach ($order->get_items() as $item_id => $item ) {   
